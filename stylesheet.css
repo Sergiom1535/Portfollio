@@ -1,0 +1,340 @@
+.typed-cursor {
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+body {
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+  }
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color:#333333;
+  }
+  .profile-image {
+    padding-top: 25px;
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  
+  /* Style sidebar links */
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+  }
+  
+  /* Style links on mouse-over */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Style the main content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+  
+  /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  .container{
+    margin-left: 250px; /* Adjust the width of the sidebar */
+    width: calc(100% - 250px); /* Subtract the sidebar width from the total width */
+    background-image: url("csu.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    
+}
+.content{
+    text-align: center;
+    color: #f1f1f1;
+
+}
+h1 {
+    font-size: 5.5rem;
+    margin: 0; /* Remove margin for h1 */
+  }
+  
+  p {
+    font-size: 2.5rem;
+    margin: 0; /* Remove margin for p */
+  }
+  .new-container{
+    margin-left: 250px;
+    height: 70vh;
+    display: flex;
+    background-color: #888888;
+  }
+  .about-image{
+    flex: 0 0 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    
+  }
+  .about-image img{
+    max-width: 100%;
+    height: auto;
+  }
+  .about-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  }
+  .about-content h2{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .about-content p{
+    display: block;
+    margin-block-start: 1em;
+    padding-right: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24PX;
+  }
+  .new-container-2{
+    margin-left: 250px;
+    height: 125vh;
+    display: flex;
+    flex-direction: column; /* Add this line to allow wrapping of project cards */
+     /* Add this line to center the cards horizontally */
+    align-items: center; /* Change align-items to flex-start to align cards to the top */
+    background-color: #BBBBBB;
+  }
+  .project-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .project-title h2{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .project-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px; /* Add this line to center the card horizontally */
+  margin-top: 20px;
+  width: calc(25% - 20px);
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #212121;
+  border-radius: 8px;
+}
+
+.project-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.project-video {
+    width: 100%; /* Set the width to 100% */
+    height: auto; /* Let the height adjust automatically based on the aspect ratio */
+  }
+
+.project-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+.project-card p {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+.icon-container {
+    text-align: center;
+    color: white;
+  }
+  
+  .icon-container i {
+    font-size: 24px;
+    margin: 5px;
+  }
+.container-2 {
+    margin-left: 250px;
+    height: 85vh;
+    display: flex;
+    flex-direction: column; /* Display elements vertically */
+    align-items: center; /* Horizontally center the elements */
+    background-color: #212121;
+  }
+  
+  .container-2 .skills-title {
+    text-align: center;
+    margin-top: 20px; /* Add margin on top of the section title */
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .container-2 .lists {
+    display: flex;
+    flex-direction: row; /* Display lists horizontally */
+    justify-content: center; /* Horizontally center the lists */
+    gap: 40px; /* Add larger gap between the lists */
+    margin-bottom: 40px; /* Add margin below the lists */
+  }
+  
+  .container-2 .list {
+    display: flex;
+    flex-direction: column; /* Display list items vertically */
+    align-items: center; /* Horizontally center the list items */
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .container-2 .list-title {
+    font-size: 24px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin-bottom: 10px; /* Add space below the list title */
+    width: 200px; /* Set a fixed width for the list titles */
+  }
+  
+  .container-2 .list li {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px; /* Add margin between the list items */
+  }
+  .container-3{
+    margin-left: 250px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column; /* Display elements vertically */
+    align-items: center; /* Horizontally center the elements */
+    background-color: #525252;
+  }
+  .contact-box {
+    width: 400px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;
+  }
+  
+  .contact-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .contact-box p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #000000;
+    font-size: 24px;
+  }
+  
+  .social-links a:hover {
+    color: white;
+  }
+  /* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .sidebar {
+      width: 100%; /* Adjust the width to fill the entire screen */
+      height: auto; /* Allow the height to adjust based on content */
+      position: static; /* Remove the fixed position */
+      margin-bottom: 20px; /* Add some spacing at the bottom */
+    }
+    
+    .main {
+      margin-left: 0; /* Remove the margin to occupy the full width */
+      padding: 0 10px; /* Adjust the padding to avoid content cutoff */
+    }
+    
+    .container,
+    .new-container,
+    .new-container-2,
+    .container-2,
+    .container-3 {
+      margin-left: 0; /* Remove the margin to occupy the full width */
+      width: 100%; /* Adjust the width to fill the entire screen */
+      height: auto; /* Allow the height to adjust based on content */
+    }
+    
+    .project-card {
+      width: 90%; /* Adjust the width to occupy more space on smaller screens */
+    }
+    
+    .about-image {
+      display: none; /* Hide the about image on smaller screens */
+    }
+    
+    .about-content {
+      margin-top: 20px; /* Add some spacing at the top */
+    }
+    
+    .container-2 .lists {
+      flex-direction: column; /* Display the lists vertically on smaller screens */
+      gap: 20px; /* Reduce the gap between lists */
+      margin-bottom: 20px; /* Add some spacing at the bottom */
+    }
+    
+    .container-2 .list-title {
+      width: 100%; /* Adjust the width to occupy the full container width */
+      text-align: center; /* Center-align the list titles */
+      margin-bottom: 5px; /* Reduce the space below the list titles */
+    }
+  }
+  
+  
+  
+  

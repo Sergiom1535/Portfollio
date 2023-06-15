@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="sidebar">
+        <img class="profile-image" src="sergio.jpg" alt="Profile Image">
+        <a href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="#about"><i class="fa fa-fw fa-user"></i>About</a>
+        <a href="#projects"><i class="fa fa-fw fa-file"></i>Projects</a>
+        <a href="Resume_Sergio_Murguia.pdf" target="_blank"><i class="fa fa-fw fa-file"></i>Resume</a>
+        <a href="#skills"><i class="fa fa-fw fa-bars" style="color: white;"></i>Skills</a>
+        <a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+      </div>
+    <div class="container" id="home">
+    <div class="content">
+        <h1>Sergio Murguia</h1>
+        <p>
+            I'm a
+            <span id="typed"></span>
+            <span class="typed-cursor" >|</span>
+       </p>
+    </div>
+    </div>
+    <div class="new-container" id="about"">
+        <img class="about-image" src="sergio2.jpg" alt="about image">
+        <div class="about-content">
+        <h2 >About Me</h2>
+        <p>
+            Hi, my name is Sergio Murguia. I'm a recent Computer Science graduate from California State University, Fullerton. During my time at Fullerton, I gained a solid foundation in various programming languages such as C++, Python, R, PHP, HTML, CSS, JavaScript, Swift, and Assembly language.
+          </p>
+          <p>
+            In addition to programming languages, my studies covered topics such as software engineering, SDLC (Software Development Life Cycle), front-end and back-end development, cloud computing, AI/ML (Artificial Intelligence/Machine Learning), and cybersecurity. I have also expanded my knowledge by learning new frameworks and tools while working on projects and staying updated with the industry's latest technology and trends.
+          </p>
+          <p>
+            Collaboration, communication, and problem-solving are skills I have developed through working on projects at CSUF. I enjoy working in a team and finding innovative solutions to complex challenges.
+          </p>
+          <p>
+            When I'm not immersed in projects and being a computer scientist, you can find me at the gym exercising and playing basketball. It's important for me to maintain a healthy balance between work and personal activities.
+          </p>
+      </div>
+    </div>
+      <div class="new-container-2" id="projects">
+        <div class="project-title">
+          <h2>Projects</h2>
+        </div>
+        <div class="project-card-container">
+        <div class="project-card">
+          <img src="hftb.png" alt="project image">
+          <h3>High Frequency Trading Bot</h3>
+          <p>A bot that buys and sells crypto currencys based on data driven descisions using a ML model.
+          </p>
+          <div class="icon-container">
+            <i class="fab fa-python"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-bootstrap"></i>
+            <i class="fab fa-react"></i>
+            <i class="fab fa-node-js"></i>
+            <i class="fas fa-database"></i>
+            <i class="fab fa-jira"></i>
+          </div> 
+        </div>
+        <div class="project-card">
+          <video class="project-video" controls>
+            <source src="list_of_all_books.webm" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3>Bookstore API</h3>
+          <p>API routes made in python using FastApi and MongoDB. User can buy, Search and Add books to the store. </p>
+          <div class="icon-container">
+            <i class="fab fa-python"></i>
+            <i class="fas fa-database"></i>
+          </div> 
+        </div>
+        <div class="project-card">
+          <img src="Screenshot from 2023-05-10 23-40-39.png" alt="project image">
+          <h3>NBA Score Board</h3>
+          <p>HTML, CSS, Flask website that incorporates an API to Display A Live scoreboard of current games.</p>
+          <div class="icon-container">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-python"></i>
+            <i class="fab fa-bootstrap"></i>
+            <i class="fab fa-css3-alt"></i>
+          </div> 
+        </div>
+        <div class="project-card">
+          <video class="project-video" controls>
+            <source src="jwt_authentication.webm" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h3>Flask App</h3>
+          <p>Flask Project that uses RestfulApi to login, signup and access a home. JWT is used to creat authentication for the user to have access to certain routes. MySQL is used for the Database.</p>
+          <div class="icon-container">
+            <i class="fab fa-python"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fas fa-database"></i>
+          </div> 
+        </div>
+        <div class="project-card">
+          <img src="dis.png" alt="project image">
+          <h3>Discussion Board</h3>
+          <p>A Discussion Board Website that is made of HTML, CSS for the front-end and PHP to access our MySQL database for the backend. This website was hosted on AWS EC2 and the database was hosted on AWS RDS.
+            AWS Lambda and Cloud Watch were also used to create a webscraper to retrieve data of who posted the most and what topic was popular.
+          </p>
+          <div class="icon-container">
+            <i class="fab fa-python"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fas fa-database"></i>
+            <i class="fab fa-php"></i>
+            <i class="fab fa-aws"></i>
+          </div> 
+        </div>
+        <div class="project-card">
+          <img src="hftb.png" alt="project image">
+          <h3>United Stocks</h3>
+          <p>A ios application that was create with swift to allow users to look up stocks via api and get current stock market news also via api.</p>
+          <div class="icon-container">
+          <i class="fab fa-swift"></i>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="screenshot.png" alt="project image">
+          <h3>Recipe Web App</h3>
+          <p>A Recipe web application created using React which allows users to look up recipes via an API. It also allows users to create a list of there favorite recipes and create their very own recipes.</p>
+          <div class="icon-container">
+            <i class="fab fa-react"></i>
+            <i class="fab fa-bootstrap"></i>
+          </div> 
+        </div>
+        <div class="project-card">
+          <img src="school.png" alt="project image">
+          <h3>School Database</h3>
+          <p>A database project made using PHP, HTML and MySQL. The User Interface allowed for teachers to look up the classes they were going to teach. Also allows you to view how many students got a specific grade for a course.
+            User can also view meeting times classrooms and number of student enrolled in a class. And Students can check there grade for each course.
+          </p>
+          <div class="icon-container">
+            <i class="fab fa-php"></i>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fas fa-database"></i>
+          </div> 
+        </div>
+        </div>
+        </div>
+        <div class="container-2" id="skills">
+          <h2 class="skills-title">Skills/Tools</h2>
+          <div class="lists">
+            <div class="list">
+              <h3 class="list-title">Languages</h3>
+              <ul>
+                <li>C++</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Bash</li>
+                <li>R</li>
+                <li>ASM</li>
+                <li>Swift</li>
+              </ul>
+            </div>
+            <div class="list">
+              <h3 class="list-title">Frameworks</h3>
+              <ul>
+                <li>Express.js</li>
+                <li>Flask</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Bootstrap</li>
+                <li>FastApi</li>
+                <li>RestfulApi</li>
+              </ul>
+            </div>
+            <div class="list">
+              <h3 class="list-title">Databases</h3>
+              <ul>
+                <li>MySQL</li>
+                <li>Sqlite</li>
+                <li>MongoDB</li>
+                <li>Amazon RDS</li>
+              </ul>
+            </div>
+            <div class="list">
+              <h3 class="list-title">Tools</h3>
+              <ul>
+                <li>VS Code</li>
+                <li>Visual Studio</li>
+                <li>Xcode</li>
+                <li>GitHub</li>
+                <li>Slack</li>
+                <li>Jira</li>
+                <li>Confluence</li>
+                <li>GDB</li>
+                <li>Rstudio</li>
+                <li>WireShark</li>
+                <li>Postman</li>
+                <li>Amazon Web Services</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container-3" id="contact">
+          <div class="contact-box">
+            <h2>Contact Information</h2>
+            <p><i class="fa fa-fw fa-envelope"></i> Email: Sergio_Murguia15@hotmail.com</p>
+            <p><i class="fa fa-phone"></i> Phone: 714-679-6316</p>
+            <p> <i class="fa  fa-location-pin"></i> Address: Santa Ana, Ca</p>
+            <div class="social-links">
+              <a href="https://github.com/Sergiom1535" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/sergio-murguia-b58875245/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+    
+    <script src="typed.js"></script>
+</body>
+</html>
